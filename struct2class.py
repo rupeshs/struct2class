@@ -27,7 +27,6 @@ while True:
         break
 
 print("Variables :" ,len(varlst))
-print(varlst)
 
 strclass="class CTestAccessor\n"
 strclass+="{\n"
@@ -36,7 +35,7 @@ for vari in member_vars:
     strclass+="\t"+vari+"\n"
 
 for vari in varlst:
-    print(vari)
+    #print(vari)
     strclass+="\tDBSTATUS m_dw"+vari+"Status\n"
 
 strclass+="\n"
@@ -60,4 +59,4 @@ strclass+="};"
 with open("OutputAccessorClass.cpp", "w") as text_file:
     text_file.write(strclass)
 
-print("Wrote "+str(len(strclass.split('\n')))+" cpp code lines ")
+print("Wrote "+str(len(strclass.split('\n')))+" lines of cpp code")
