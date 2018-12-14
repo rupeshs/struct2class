@@ -1,6 +1,10 @@
+#Structure to cpp class conversion(OLEDB accessor class)
+#(C) 2018 Rupesh Sreeraman
+#use struct.txt fill structure variable without prefix type
+# instead of int nCount; use int Count;
+# use semicoloun at the end of lines 
 
 fh = open('struct.txt')
-
 varlst=[]
 member_vars=[]
 while True:
@@ -55,3 +59,5 @@ strclass+="};"
 
 with open("OutputAccessorClass.cpp", "w") as text_file:
     text_file.write(strclass)
+
+print("Wrote "+str(len(strclass.split('\n')))+" cpp code lines ")
