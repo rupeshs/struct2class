@@ -21,51 +21,51 @@ public:
 	int    SecondaryPointOffsetDistance;
 	int    PrimaryPointLocationNr;
 	int    SecondaryPointLocationNr;
-	float  Accuracy
-	
-	DBSTATUS m_dwNumberOfLanesStatus
-	DBSTATUS m_dwSectionIdStatus
-	DBSTATUS m_dwSectionVersionStatus
-	DBSTATUS m_dwSectionIdentifierStatus
-	DBSTATUS m_dwSectionNameStatus
-	DBSTATUS m_dwRecordVersionTimeStatus
-	DBSTATUS m_dwLongitudeStatus
-	DBSTATUS m_dwLatitudeStatus
-	DBSTATUS m_dwStartPointLongitudeStatus
-	DBSTATUS m_dwStartPointLatitudeStatus
-	DBSTATUS m_dwEndPointLongitudeStatus
-	DBSTATUS m_dwEndPointLatitudeStatus
-	DBSTATUS m_dwAlertCCountryCodeStatus
-	DBSTATUS m_dwAlertCTableNumberStatus
-	DBSTATUS m_dwAlertCTableVersionStatus
-	DBSTATUS m_dwDirectionStatus
-	DBSTATUS m_dwPrimaryPointOffsetDistanceStatus
-	DBSTATUS m_dwSecondaryPointOffsetDistanceStatus
-	DBSTATUS m_dwPrimaryPointLocationNrStatus
-	DBSTATUS m_dwSecondaryPointLocationNrStatus
-	DBSTATUS m_dwAccuracyStatus
+	float  Accuracy;	
 
-	DBLENGTH m_dwNumberOfLanesLength
-	DBLENGTH m_dwSectionIdLength
-	DBLENGTH m_dwSectionVersionLength
-	DBLENGTH m_dwSectionIdentifierLength
-	DBLENGTH m_dwSectionNameLength
-	DBLENGTH m_dwRecordVersionTimeLength
-	DBLENGTH m_dwLongitudeLength
-	DBLENGTH m_dwLatitudeLength
-	DBLENGTH m_dwStartPointLongitudeLength
-	DBLENGTH m_dwStartPointLatitudeLength
-	DBLENGTH m_dwEndPointLongitudeLength
-	DBLENGTH m_dwEndPointLatitudeLength
-	DBLENGTH m_dwAlertCCountryCodeLength
-	DBLENGTH m_dwAlertCTableNumberLength
-	DBLENGTH m_dwAlertCTableVersionLength
-	DBLENGTH m_dwDirectionLength
-	DBLENGTH m_dwPrimaryPointOffsetDistanceLength
-	DBLENGTH m_dwSecondaryPointOffsetDistanceLength
-	DBLENGTH m_dwPrimaryPointLocationNrLength
-	DBLENGTH m_dwSecondaryPointLocationNrLength
-	DBLENGTH m_dwAccuracyLength
+	DBSTATUS m_dwNumberOfLanesStatus;
+	DBSTATUS m_dwSectionIdStatus;
+	DBSTATUS m_dwSectionVersionStatus;
+	DBSTATUS m_dwSectionIdentifierStatus;
+	DBSTATUS m_dwSectionNameStatus;
+	DBSTATUS m_dwRecordVersionTimeStatus;
+	DBSTATUS m_dwLongitudeStatus;
+	DBSTATUS m_dwLatitudeStatus;
+	DBSTATUS m_dwStartPointLongitudeStatus;
+	DBSTATUS m_dwStartPointLatitudeStatus;
+	DBSTATUS m_dwEndPointLongitudeStatus;
+	DBSTATUS m_dwEndPointLatitudeStatus;
+	DBSTATUS m_dwAlertCCountryCodeStatus;
+	DBSTATUS m_dwAlertCTableNumberStatus;
+	DBSTATUS m_dwAlertCTableVersionStatus;
+	DBSTATUS m_dwDirectionStatus;
+	DBSTATUS m_dwPrimaryPointOffsetDistanceStatus;
+	DBSTATUS m_dwSecondaryPointOffsetDistanceStatus;
+	DBSTATUS m_dwPrimaryPointLocationNrStatus;
+	DBSTATUS m_dwSecondaryPointLocationNrStatus;
+	DBSTATUS m_dwAccuracyStatus;
+
+	DBLENGTH m_dwNumberOfLanesLength;
+	DBLENGTH m_dwSectionIdLength;
+	DBLENGTH m_dwSectionVersionLength;
+	DBLENGTH m_dwSectionIdentifierLength;
+	DBLENGTH m_dwSectionNameLength;
+	DBLENGTH m_dwRecordVersionTimeLength;
+	DBLENGTH m_dwLongitudeLength;
+	DBLENGTH m_dwLatitudeLength;
+	DBLENGTH m_dwStartPointLongitudeLength;
+	DBLENGTH m_dwStartPointLatitudeLength;
+	DBLENGTH m_dwEndPointLongitudeLength;
+	DBLENGTH m_dwEndPointLatitudeLength;
+	DBLENGTH m_dwAlertCCountryCodeLength;
+	DBLENGTH m_dwAlertCTableNumberLength;
+	DBLENGTH m_dwAlertCTableVersionLength;
+	DBLENGTH m_dwDirectionLength;
+	DBLENGTH m_dwPrimaryPointOffsetDistanceLength;
+	DBLENGTH m_dwSecondaryPointOffsetDistanceLength;
+	DBLENGTH m_dwPrimaryPointLocationNrLength;
+	DBLENGTH m_dwSecondaryPointLocationNrLength;
+	DBLENGTH m_dwAccuracyLength;
 
 DEFINE_COMMAND_EX(CTestAccessor, L"{ CALL dbo.Spc_GetTestData(?) }")
 

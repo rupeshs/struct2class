@@ -10,7 +10,7 @@ member_vars=[]
 while True:
     line = fh.readline()
     variables=line.split(" ")
-    member_vars.append(line[:-1])
+    member_vars.append(line)
     variable=str(variables[len(variables)-1])
 
     split_pos=variable.find('[')
@@ -32,15 +32,16 @@ strclass="class CTestAccessor\n"
 strclass+="{\n"
 strclass+="public:\n"
 for vari in member_vars:
-    strclass+="\t"+vari+"\n"
+    strclass+="\t"+vari+""
 
+strclass+="\n\n"
 for vari in varlst:
     #print(vari)
-    strclass+="\tDBSTATUS m_dw"+vari+"Status\n"
+    strclass+="\tDBSTATUS m_dw"+vari+"Status;\n"
 
 strclass+="\n"
 for vari in varlst:
-    strclass+="\tDBLENGTH m_dw"+vari+"Length\n"
+    strclass+="\tDBLENGTH m_dw"+vari+"Length;\n"
 
 strclass+="\n"
 strclass+="DEFINE_COMMAND_EX(CTestAccessor, L\"{ CALL dbo.Spc_GetTestData(?) }\")\n"
